@@ -35,9 +35,9 @@
 // }
 
 // Inkrement (var. Schrittweite)
-for (let i = 50; i <= 100; i+= 5) {
-    output(i);  
-}
+// for (let i = 50; i <= 100; i+= 5) {
+//     output(i);  
+// }
 
 
 /**
