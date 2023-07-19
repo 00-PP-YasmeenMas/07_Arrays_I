@@ -139,23 +139,21 @@ output(getSentenceArr2(["Ich","bin","die","coole","Maxine","Mützerich"]));
 function getSentenceArr2(arr) {
     const GAP = " ";
     const PUNCT = ".";
-    let str = ""; // Anfangswert
+//    let str = ""; // Anfangswert
+//     for (let i = 0; i < arr.length; i++) {
 
-
-    for (let i = 0; i < arr.length; i++) {
-
-        // 2. Variante if-else
-        if (i < arr.length - 1) {
-            str += arr[i] + GAP; 
-        } else {
-            str += arr[i] + PUNCT; 
-        }
-       
-    }
-    // 1. Variante trim()
-    // str = str.trim()+ PUNCT;
-
-    return str;
+//         // 2. Variante if-else
+//         if (i < arr.length - 1) {
+//             str += arr[i] + GAP; 
+//         } else {
+//             str += arr[i] + PUNCT; 
+//         }
+//     }
+//     // 1. Variante trim()
+//     // str = str.trim()+ PUNCT;
+    // return str;
+// 3. Variante join
+    return arr.join(GAP)+ PUNCT;
 }
 
 
