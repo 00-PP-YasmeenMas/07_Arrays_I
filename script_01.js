@@ -67,12 +67,27 @@ hier: Aufsummierung
 // output("inhalt von a: " + a);
 
 /* Besser: mit FOR-Schleife */
-let a = 0; // Anfangswert
-for (let i = 0; i < 10; i++) { 
-   // a = a + 1;
-    a += 1; // Kurzschreibweise
-    output("inhalt von a: " + a);
+// let a = 0; // Anfangswert
+// for (let i = 0; i < 10; i++) { 
+//    // a = a + 1;
+//     a += 1; // Kurzschreibweise
+//     output("inhalt von a: " + a);
+// }
+
+
+/*
+1a. Einer Variablen kann Ihr eigener Wert zugewiesen werden
+Solange die Variable existiert, bleibt dieser erhalten
+hier: Verkettung eines Strings // Transponierung
+*/
+
+let str = ""; // Anfangswert
+for (let i = 0; i < 4; i++) {
+   str += "Test";
+   output("inhalt von str: " + str);
 }
+
+
 
 /**
  *   PRAXIS
@@ -120,7 +135,7 @@ function getSentenceArr(arr) {
 /*** 01b. Funktionalität mit Array 2  */
 // Transponierung:  untereinander ---> nebeneinander
 // Helge Schneider: Anananandereihung ...
-output(getSentenceArr2(["Ich","bin","die","coole","Maxine","Mützerich"]));
+// output(getSentenceArr2(["Ich","bin","die","coole","Maxine","Mützerich"]));
 function getSentenceArr2(arr) {
     const GAP = " ";
     const PUNCT = ".";
